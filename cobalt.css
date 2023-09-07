@@ -8,7 +8,7 @@
   --font-mono: "Noto Sans Mono", "Consolas", "SF Mono", monospace;
   --padding-1: 0.75rem;
   --line-height: 1.65rem;
-  --red: rgb(249, 47, 96);
+  --red: rgb(185, 206, 93);
   --gap: 0.5rem;
   --gap-no-icon: 0.6rem;
 }
@@ -25,8 +25,8 @@
     --glass: rgba(25, 25, 25, 0.85);
     --glass-lite: rgba(25, 25, 25, 0.98);
     --subbackground: rgb(10, 10, 10);
-    --background: rgb(12,10,13);
-    --background-backdrop: rgba(12,10,13,1.00);
+    --background: rgb(22,22,22);
+    --background-backdrop: rgb(22,22,22,0.842);
   }
 }
 @media (prefers-color-scheme: light) {
@@ -58,8 +58,8 @@
   --glass: rgba(25, 25, 25, 0.85);
   --glass-lite: rgba(25, 25, 25, 0.98);
   --subbackground: rgb(10, 10, 10);
-  --background: rgb(12,10,13);
-  --background-backdrop: rgba(12,10,13,1.00);
+  --background: rgb(22,22,22);
+  --background-backdrop: rgba(22,22,22,0.842);
 }
 [data-theme="light"] {
   --accent: rgb(25, 25, 25);
@@ -254,12 +254,14 @@ button:active,
   flex-direction: row;
 }
 #logo {
-  text-align: left;
-  font-size: 1rem;
+  text-align: center;
+  font-size: 2rem;
   white-space: nowrap;
-  width: 7rem;
-  height: 2.5rem;
-  align-items: center;
+  width: 8rem;
+  height: 9rems;
+  
+  height: 1.0rem;
+  align-items: right;
   display: flex;
 }
 #download-area {
@@ -1046,7 +1048,7 @@ svg {
   }
   #logo {
     width: 100%;
-    height: auto;
+    height: center;
     justify-content: center;
   }
   #cobalt-main-box {

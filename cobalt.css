@@ -25,8 +25,8 @@
     --glass: rgba(25, 25, 25, 0.85);
     --glass-lite: rgba(25, 25, 25, 0.98);
     --subbackground: rgb(10, 10, 10);
-    --background: rgb(32, 32, 32);
-    --background-backdrop: rgba(32, 32, 32, 0.5);
+    --background: rgb(255,255,0);
+    --background-backdrop: rgba(255,255,0, 0.5);
   }
 }
 @media (prefers-color-scheme: light) {
@@ -58,8 +58,8 @@
   --glass: rgba(25, 25, 25, 0.85);
   --glass-lite: rgba(25, 25, 25, 0.98);
   --subbackground: rgb(10, 10, 10);
-  --background: rgb(32, 32, 32);
-  --background-backdrop: rgba(32, 32, 32, 0.5);
+  --background: rgb(255,255,0);
+  --background-backdrop: rgba(255,255,0, 0.5);
 }
 [data-theme="light"] {
   --accent: rgb(25, 25, 25);

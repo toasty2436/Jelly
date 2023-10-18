@@ -1181,7 +1181,7 @@
   }
   .bg-\[\#1C161B\] {
     --tw-bg-opacity: 1;
-    background-color: rgb(28 22 27 / var(--tw-bg-opacity));
+    background-color: rgb(2 22 27 / var(--tw-bg-opacity));
   }
   .bg-\[\#C93957\] {
     --tw-bg-opacity: 1;
@@ -1553,7 +1553,7 @@
   }
   .text-bink-700 {
     --tw-text-opacity: 1;
-    color: rgb(205 151 214 / var(--tw-text-opacity));
+    color: rgb(22 22 22 / var(--tw-text-opacity));
   }
   .text-black {
     --tw-text-opacity: 1;
@@ -1877,10 +1877,10 @@
     height: 8px;
   }
   .scrollbar-track-denim-400 {
-    --scrollbar-track: #2b263d !important;
+    --scrollbar-track: #00348f !important;
   }
   .scrollbar-thumb-denim-200 {
-    --scrollbar-thumb: #191526 !important;
+    --scrollbar-thumb: #00348f !important;
   }
   .\[--color\:\#9C93B5\] {
     --color: #9c93b5;

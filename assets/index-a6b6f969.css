@@ -164,7 +164,7 @@
     outline: auto;
   }
   :-moz-ui-invalid {
-    box-shadow: none;
+    box-shadow: none; 
   }
   progress {
     vertical-align: baseline;
@@ -1282,10 +1282,10 @@
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
   .bg-zinc-800 {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 100%;
     background-image:       
-       url("https://yt3.googleusercontent.com/ZW2ffA9rPctrTIjcKwCw4yh99Hq7EMAdokvVhn9H3ACIm_GD8KslgC0Fd3CQK-2WEtH16LUO=s900-c-k-c0x00ffffff-no-rj");
+       url("https://media1.giphy.com/media/uWzS6ZLs0AaVOJlgRd/giphy.gif");
    background-repeat: no-repeat, no-repeat;
    background-position: center; 
     

@@ -1282,8 +1282,14 @@
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
   .bg-zinc-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+    height: 400px;
+    width: 100%;
+    background-image:       
+       url("https://yt3.googleusercontent.com/ZW2ffA9rPctrTIjcKwCw4yh99Hq7EMAdokvVhn9H3ACIm_GD8KslgC0Fd3CQK-2WEtH16LUO=s900-c-k-c0x00ffffff-no-rj");
+   background-repeat: no-repeat, no-repeat;
+   background-position: center; 
+    
+
   }
   .\!bg-opacity-100 {
     --tw-bg-opacity: 1 !important;
@@ -1968,7 +1974,7 @@
   :root {
     --slider-height: 0.25rem;
     --slider-border-radius: 1em;
-    --slider-progress-background: #8652bb;
+    --slider-progress-background: #00a2ff;
   }
   input[type="range"].styled-slider {
     height: var(--slider-height);
@@ -2118,7 +2124,7 @@
     --tw-ring-offset-width: 2px;
   }
   .focus-visible\:ring-offset-bink-300:focus-visible {
-    --tw-ring-offset-color: #533670;
+    --tw-ring-offset-color: #3c3e55;
   }
   .group:hover .group-hover\:h-2 {
     height: 0.5rem;

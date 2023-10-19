@@ -87,7 +87,6 @@ p.boldpara {font-weight:bold;}
     <div class="update-popup" id="update-popup">
       <h2>New Features & Patch Notes</h2>
       <p>
-        
         <!-- Add your update and patch notes here -->
         - Added Better UI
         <br>
@@ -97,20 +96,19 @@ p.boldpara {font-weight:bold;}
         <br>
         - More Updates Soon!
         <br>
-        - Shoutout To <span style="font-weight: bold;">𝐠𝐨𝐭𝐝𝐚𝐥𝐦𝐚</span> For The Love And Support 💜
+        - Shoutout To <span class="boldpara">𝐠𝐨𝐭𝐝𝐚𝐥𝐦𝐚</span> For The Love And Support 💜
       </p>
       <img src="https://www.revolt.tv/wp-content/uploads/2021/08/Juan_and_Khaled_2-1280x720.jpg" alt="Italian Trulli">
-
       <a class="close-button" onclick="closeUpdatePopup()">Close</a>
     </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
 
     <script>
       // JavaScript to show the update popup when a user visits the website
       document.addEventListener("DOMContentLoaded", function () {
         const updatePopup = document.getElementById("update-popup");
+
         if (shouldShowUpdatePopup()) {
           updatePopup.style.display = "block";
         }
@@ -118,16 +116,22 @@ p.boldpara {font-weight:bold;}
 
       // Function to determine whether to show the update popup (customize as needed)
       function shouldShowUpdatePopup() {
-        // You can implement custom logic here.
-        // For example, you can use cookies or local storage to track if the user has seen the update popup before.
-        // Return true to show the popup, or false to hide it.
-        return true; // Change this condition according to your requirements.
+        // Check if the user has already seen the popup by looking at a localStorage flag.
+        // Return true to show the popup only if it hasn't been seen before.
+        if (localStorage.getItem("updatePopupSeen") === null) {
+          // The popup hasn't been seen before, so we'll show it.
+          return true;
+        }
+        return false; // The user has seen the popup, so don't show it again.
       }
 
-      // Function to close the update popup
+      // Function to close the update popup and set the localStorage flag
       function closeUpdatePopup() {
         const updatePopup = document.getElementById("update-popup");
         updatePopup.style.display = "none";
+
+        // Set a flag in localStorage to indicate that the popup has been seen.
+        localStorage.setItem("updatePopupSeen", "true");
       }
     </script>
 

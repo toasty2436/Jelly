@@ -40,11 +40,93 @@
     body {
       background-color: #1f1f1f; /* Change the color code to the desired color */
     }
+
+    /* Update Popup Styles */
+    .update-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 430px;
+        height: 400px;
+        padding: 20px;
+        background-color: #353535;
+        border: 1px solid #0071bd;
+        border-radius: 10px; /* Apply rounded corners */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.74);
+        z-index: 9999;
+        overflow-y: auto; /* Add scrollbar if content exceeds max height */
+
+      }
+
+      .update-popup h2 {
+        font-size: 22px;
+      }
+
+      .update-popup p {
+        font-size: 14px;
+      }
+
+      .close-button {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #007bff;
+      }
+
+      img {
+  border: 5px solid #555;
+  border-radius: 10px;
+}
   </style>
   <body>
+    <div class="update-popup" id="update-popup">
+      <h2>New Features & Patch Notes</h2>
+      <p>
+        
+        <!-- Add your update and patch notes here -->
+        - Added Better UI
+        <br>
+        - Updated Provider DataBase
+        <br>
+        - Even FASTER Streaming NOW!!
+        <br>
+        - More Updates Soon!
+      </p>
+      <img src="https://www.revolt.tv/wp-content/uploads/2021/08/Juan_and_Khaled_2-1280x720.jpg" alt="Italian Trulli">
+
+      <a class="close-button" onclick="closeUpdatePopup()">Close</a>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     
+
+    <script>
+      // JavaScript to show the update popup when a user visits the website
+      document.addEventListener("DOMContentLoaded", function () {
+        const updatePopup = document.getElementById("update-popup");
+        if (shouldShowUpdatePopup()) {
+          updatePopup.style.display = "block";
+        }
+      });
+
+      // Function to determine whether to show the update popup (customize as needed)
+      function shouldShowUpdatePopup() {
+        // You can implement custom logic here.
+        // For example, you can use cookies or local storage to track if the user has seen the update popup before.
+        // Return true to show the popup, or false to hide it.
+        return true; // Change this condition according to your requirements.
+      }
+
+      // Function to close the update popup
+      function closeUpdatePopup() {
+        const updatePopup = document.getElementById("update-popup");
+        updatePopup.style.display = "none";
+      }
+    </script>
+
   </body>
 </html>
 <!--Version--> 

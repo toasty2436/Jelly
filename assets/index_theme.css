@@ -1220,7 +1220,9 @@
   }
   .bg-bink-400 {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 100 180 / var(--tw-bg-opacity));
+    background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+    border: 2px solid rgb(0, 100, 220); /* You can change the color and thickness as needed */
+    border-radius: 15px; /* You can adjust the radius for rounded corners */
   }
   .bg-bink-500 {
     --tw-bg-opacity: 1;
@@ -1253,10 +1255,13 @@
   .bg-denim-400 {
     --tw-bg-opacity: 1;
     background-color: rgb(59 59 59 / var(--tw-bg-opacity));
+    border-radius: 15px;
   }
   .bg-denim-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(25 25 25 / var(--tw-bg-opacity));
+    border: 1px solid rgba(0, 150, 220, 0.411); /* You can change the color and thickness as needed */
+    border-radius: 18px; 
   }
   .bg-denim-600 {
     --tw-bg-opacity: 1;

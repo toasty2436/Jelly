@@ -1260,7 +1260,7 @@
   .bg-denim-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(25 25 25 / var(--tw-bg-opacity));
-    border: 1px solid rgba(0, 150, 220, 0.411); /* You can change the color and thickness as needed */
+    border: 1px solid rgba(14, 103, 212, 0.685); /* You can change the color and thickness as needed */
     border-radius: 18px; 
   }
   .bg-denim-600 {
@@ -1566,7 +1566,7 @@
   }
   .text-denim-700 {
     --tw-text-opacity: 1;
-    color: rgb(12 117 143 / var(--tw-text-opacity));
+    color: rgb(220 220 220 / var(--tw-text-opacity));
   }
   .text-gray-300 {
     --tw-text-opacity: 1;
